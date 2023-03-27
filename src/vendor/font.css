@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Neue Machina Light';
+  src: 
+    url(../vendor/fonts/NeueMachina-Light.woff2) format('woff2'),
+    url(../vendor/fonts/NeueMachina-Light.woff) format('woff'),
+    url(../vendor/fonts/NeueMachina-Light.ttf) format('ttf'),
+    url(../vendor/fonts/NeueMachina-Light.eot) format('eot');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina Regular';
+  src:
+    url(../vendor/fonts/NeueMachina-Regular.woff2) format('woff2'),
+    url(../vendor/fonts/NeueMachina-Regular.woff) format('woff'),
+    url(../vendor/fonts/NeueMachina-Regular.ttf) format('ttf'),
+    url(../vendor/fonts/NeueMachina-Regular.eot) format('eot');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Machina Ultrabold';
+  src: 
+    url(../vendor/fonts/NeueMachina-Ultrabold.woff2) format('woff2'),
+    url(../vendor/fonts/NeueMachina-Ultrabold.woff) format('woff'),
+    url(../vendor/fonts/NeueMachina-Ultrabold.ttf) format('ttf'),
+    url(../vendor/fonts/NeueMachina-Ultrabold.eot) format('eot');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: 
+    url(../vendor/fonts/ProximaNova-Bold.woff2) format('woff2'),
+    url(../vendor/fonts/ProximaNova-Bold.woff) format('woff'),
+    url(../vendor/fonts/ProximaNova-Bold.ttf) format('ttf'),
+    url(../vendor/fonts/ProximaNova-Bold.eot) format('eot');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Extrabold';
+  src: 
+    url(../vendor/fonts/ProximaNova-Extrabld.woff2) format('woff2'),
+    url(../vendor/fonts/ProximaNova-ExtrabldIt.woff) format('woff'),
+    url(../vendor/fonts/ProximaNova-ExtrabldIt.ttf) format('ttf'),
+    url(../vendor/fonts/ProximaNova-ExtrabldIt.eot) format('eot');
+  font-style: normal;
+  font-display: swap;
+}
