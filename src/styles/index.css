@@ -2,7 +2,12 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/variables.css);
 
-body {
-  background-color: #01204C;
-  color: #fff;
-}
+@import url(../styles/blocks/content/content.css);
+
+@import url(../styles/blocks/header/header.css);
+@import url(../styles/blocks/header/__menu/header__menu.css);
+@import url(../styles/blocks/header/__menu-list/header__menu-list.css);
+@import url(../styles/blocks/header/__menu-item/header__menu-item.css);
+@import url(../styles/blocks/header/__menu-link/header__menu-link.css);
+@import url(../styles/blocks/header/__download-link/header__download-link.css);
+
