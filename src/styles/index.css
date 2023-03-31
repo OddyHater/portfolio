@@ -11,3 +11,19 @@
 @import url(../styles/blocks/header/__menu-link/header__menu-link.css);
 @import url(../styles/blocks/header/__download-link/header__download-link.css);
 
+@import url(../styles/blocks/about/about.css);
+@import url(../styles/blocks/about/__image/about__image.css);
+@import url(../styles/blocks/about/__text-container/about__text-container.css);
+@import url(../styles/blocks/about/__title/about__title.css);
+@import url(../styles/blocks/about/__subtitle/about__subtitle.css);
+@import url(../styles/blocks/about/__list/about__list.css);
+@import url(../styles/blocks/about/__list-item/about__list-item.css);
+@import url(../styles/blocks/about/__date/about__date.css);
+@import url(../styles/blocks/about/__text/about__text.css);
+
+@import url(../styles/blocks/stack/stack.css);
+@import url(../styles/blocks/stack/__list/stack__list.css);
+@import url(../styles/blocks/stack/__list-item/stack__list-item.css);
+@import url(../styles/blocks/stack/__icon/stack__icon.css);
+@import url(../styles/blocks/stack/__text/stack__text.css);
+
