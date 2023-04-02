@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -19,27 +20,34 @@ module.exports = {
     compress: true,
     port: 8080
   },
+  resolve: {
+    extensions: ['.js', '.scss'] // Добавить расширение scss
+  },
   module: {
     rules: [{
-        test: /\.js$/,
-        use: 'babel-loader',
-        exclude: '/node_modules/'
-      },
-      {
-        test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1
-            }
-          },
-          'postcss-loader'
-        ]
-      },
+      test: /\.js$/,
+      use: 'babel-loader',
+      exclude: '/node_modules/'
+    },   
+    {     
+      test: /\.(png|svg|jpg|gif)$/,
+      type: 'asset/resource'
+    },
+    {
+      test: /\.(woff|woff2|eot|ttf|otf)$/i,
+      type: 'asset/resource',
+      generator: {
+        filename: 'fonts/[name][ext][query]'
+      }
+    },
+    {
+      test: /\.css$/i,
+      use: [MiniCssExtractPlugin.loader, "css-loader"],
+    },
+    {
+      test: /\.scss$/i,
+      use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+    }
     ]
   },
   plugins: [
@@ -49,5 +57,11 @@ module.exports = {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
 
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'src/fonts', to: 'fonts' }
+      ]
+    })
+
   ]
-}
+};

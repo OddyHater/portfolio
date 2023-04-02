@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+/*abstracts*/
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixin';
+/*abstracts*/
+
+/*vendors*/
+@import 'vendors/normalize';
+/*vendors*/
+
+/*base*/
+@import 'base/fonts';
+@import 'base/typography.scss';
+/*base*/
+
+/*layout*/
+
+/*layout*/
+
+/*components*/
+@import 'layout/content.scss';
+@import 'layout/header.scss';
+/*components*/
+
+.header {
+    background-color: $blue
+}
