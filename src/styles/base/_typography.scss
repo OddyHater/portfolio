@@ -68,3 +68,116 @@
 		    }
 		}
 }
+
+.about {
+  color: #fff;
+
+  // .about__date
+
+  &__date {
+    font-family: $proxima-extrabold;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  // .about__text
+
+  &__text {
+    font-family: $neue-light;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.stack {
+  color: #fff;
+
+  // .stack__title
+
+  &__title {
+    font-family: $neue-regular;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  // .stack__text
+
+  &__text {
+    font-family: $neue-light;
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.card {
+  color: #fff;
+
+  // .card__title
+
+  &__title {
+    font-family: $neue-regular;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  // .card__stack-list-item
+
+  &__stack-list-item {
+    font-family: $neue-light;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.footer {
+
+  // .footer__wrapper
+
+  &__wrapper {
+  }
+
+  // .footer__socials
+
+  &__socials {
+  }
+
+  // .footer__social
+
+  &__social {
+     
+  }
+
+  // .footer__link
+
+  &__link {
+    font-family: $neue-regular;
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  // .footer__contact
+
+  &__contact {
+  }
+
+  // .footer__contact-text
+
+  &__contact-text {
+    font-family: $neue-light;
+    color: $gray-text;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  // .footer__resume
+
+  &__resume {
+    font-family: $neue-bold;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
