@@ -1,0 +1,65 @@
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 285px;
+  padding: 48px 0;
+  height: 100%;
+  width: 120px;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, #0D2454 0%, rgba(127, 76, 239, 0) 100%);
+  
+  &__logo {
+    width: 40px;
+    height: 40px;
+  }
+
+
+  &__points {
+  }
+
+  &__point {
+   
+  }
+
+  &__socials {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__social {
+    
+    width: 40px;
+    height: 40px;
+  }
+
+  &__social-link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+  }
+}
+.social-link {
+
+  &_type_tg {
+    background-image: url("~/src/image/svg/icon-tg.svg");
+  }
+
+  &_type_gh {
+    background-image: url("~/src/image/svg/icon-gh.svg");
+  }
+
+  &_type_in {
+    background-image: url("~/src/image/svg/icon-linkedin.svg");
+  }
+
+  &_type_inst {
+    background-image: url("~/src/image/svg/icon-inst.svg");
+  }
+}

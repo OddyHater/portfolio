@@ -16,10 +16,10 @@
 /*base*/
 
 /*layout*/
-
+@import 'layout/content.scss';
+@import 'layout/header.scss';
 /*layout*/
 
 /*components*/
-@import 'layout/content.scss';
-@import 'layout/header.scss';
+@import 'components/sidenav.scss';
 /*components*/

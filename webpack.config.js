@@ -29,10 +29,10 @@ module.exports = {
       use: 'babel-loader',
       exclude: '/node_modules/'
     },   
-    {     
-      test: /\.(png|svg|jpg|gif)$/,
-      type: 'asset/resource'
-    },
+    {
+      test: /\.(png|jpg|jpeg|svg|gif)$/,
+      type: 'asset/resource',
+  },
     {
       test: /\.(woff|woff2|eot|ttf|otf)$/i,
       type: 'asset/resource',
