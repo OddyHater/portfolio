@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 57px 88px;
+    padding: 40px 88px 0;
 
 		&__menu {
         
@@ -15,16 +15,18 @@
     }
 
 		&__menu-item {
+
 		}
 
 		&__menu-link {
+      
     
 		}
 
 		&__download-link {
-        display: block;
-        padding: 16px 32px;
-        border: 1px solid #fff;
-        border-radius: 12px 0;
+      display: block;
+      padding: 16px 32px;
+      border: 1px solid #fff;
+      @extend %active-button-border;
 		}
 }

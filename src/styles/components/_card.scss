@@ -1,0 +1,32 @@
+.card {
+  @extend %card;
+  padding: 24px;
+  // .card__title
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  // .card__stack-list
+
+  &__stack-list {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  // .card__stack-list-item
+
+  &__stack-list-item {
+    @extend %portfolio-button;
+    
+  }
+
+  // .card__image
+
+  &__image {
+    display: block;
+    @extend %portfolio-image;
+  }
+}

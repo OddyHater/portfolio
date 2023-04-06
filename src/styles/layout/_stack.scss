@@ -1,0 +1,35 @@
+.stack {
+  max-width: 1144px;
+  margin: 0 auto;
+  margin-top: 64px;
+  // .stack__title
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  // .stack__list
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .stack__list-item
+
+  &__list-item {
+    @extend %card;
+    padding: 28px 42px;
+  }
+
+  // .stack__icon
+
+  &__icon {
+  }
+
+  // .stack__text
+
+  &__text {
+  }
+}

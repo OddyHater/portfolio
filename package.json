@@ -1,5 +1,5 @@
 {
-  "name": "mesto",
+  "name": "personal-site",
   "version": "0.0.1",
   "description": "**Обзор**",
   "main": "./src/index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OddyHater/mesto.git"
+    "url": "git+https://github.com/OddyHater/personal-site.git"
   },
   "author": "Grishin Roman",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/OddyHater/mesto/issues"
+    "url": "https://github.com/OddyHater/personal-site/issues"
   },
-  "homepage": "https://github.com/OddyHater/mesto#readme",
+  "homepage": "https://github.com/OddyHater/personal-site#readme",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",

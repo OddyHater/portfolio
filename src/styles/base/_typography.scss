@@ -36,37 +36,56 @@
 
 .hero {
 
-		// .hero__badge
+	&__link {
 
-		&__badge {       
+    font-family: $neue-bold;
+    font-size: 24px;
+    line-height: 40px;
+    text-decoration: none;
+		// .hero__link_type
 
-		    // .hero__badge_type
-
-		    &_type_name {
-          font-family: $neue-regular;
-          color: #fff;
-          font-size: 40px;
-          line-height: 56px;
-		    }
-
-		    // .hero__badge_type
-
-		    &_type_proff {
-          font-family: $neue-regular;
-          color: #fff;
-          font-size: 32px;
-          line-height: 32px;          
-		    }
-
-		    // .hero__badge_type
-
-		    &_type_experience {
-            font-family: $neue-light;
-            color: $gray-text;
-            font-size: 24px;
-            line-height: 32px;
-		    }
+		&_type_portfolio {
+      color: #fff;
 		}
+
+		// .hero__link_type
+
+		&_type_about {
+      color: $blue;
+		}
+	}
+  
+	// .hero__badge
+
+	&__badge {
+
+	  // .hero__badge_type
+
+	  &_type_name {
+      font-family: $neue-regular;
+      color: #fff;
+      font-size: 40px;
+      line-height: 56px;
+	  }
+
+	  // .hero__badge_type
+
+	  &_type_proff {
+      font-family: $neue-regular;
+      color: #fff;
+      font-size: 32px;
+      line-height: 32px;
+	  }
+
+	  // .hero__badge_type
+
+	  &_type_experience {
+      font-family: $neue-light;
+      color: $gray-text;
+      font-size: 24px;
+      line-height: 32px;
+	  }
+  }
 }
 
 .about {
@@ -96,6 +115,7 @@
 
   &__title {
     font-family: $neue-regular;
+    font-weight: 400;
     font-size: 32px;
     line-height: 32px;
   }
@@ -116,6 +136,7 @@
 
   &__title {
     font-family: $neue-regular;
+    font-weight: 400;
     font-size: 32px;
     line-height: 32px;
   }

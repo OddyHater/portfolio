@@ -1,0 +1,111 @@
+.hero {
+  margin-top: 160px;
+  // .hero__wrapper
+
+  &__wrapper {
+    max-width: 1144px;
+    margin: 0 auto;
+    display: flex;    
+    gap: 47px;
+  }
+
+  // .hero__container
+
+  &__container {
+
+    // .hero__container_type
+
+    &_type_preview {
+      padding-top: 85px;
+    }
+
+    // .hero__container_type
+
+    &_type_badge {      
+    }
+  }
+
+  // .hero__title
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  // .hero__subtitle
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  &__buttons-container {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_type_portfolio {
+      background-color: $blue;
+      padding: 18px 58px;
+      @extend %active-button-border;
+    }
+
+    &_type_about {
+
+    }
+  }
+
+  // .hero__image
+
+  &__image {    
+    position: relative;
+    z-index: 3;
+    max-width: 565px;
+  }
+
+  // .hero__badge
+
+  &__badge {    
+
+    // .hero__badge_type
+
+    &_type_name {
+      margin: 0;
+      margin-bottom: 24px;
+    }
+
+    // .hero__badge_type
+
+    &_type_proff {
+      margin: 0;
+      margin-bottom: 8px;
+    }
+
+    // .hero__badge_type
+
+    &_type_experience {
+      margin: 0;
+    }
+  }
+
+  &__badge-info-container {
+    box-sizing: border-box;
+    padding: 105px 0px 41px 48px;
+    margin-top: -103px;
+    margin-left: auto;
+
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) -1.52%, rgba(255, 255, 255, 0.0192) 104.35%);
+    backdrop-filter: blur(60px);
+
+    clip-path: polygon(50% 0%, 100% 0, 100% 80%, 85% 100%, 0 100%, 0% 60%, 0 0);
+
+    border-radius: 8px;
+    max-width: 460px;
+  }
+}
