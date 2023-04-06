@@ -26,23 +26,31 @@
     <div class="sidenav">
       <img src="<%=require('../src/image/svg/logo.svg')%>" alt="logo" class="sidenav__logo">
       <div class="sidenav__points">
-        <span class="sidenav__point"></span>
+        <span class="sidenav__point sidenav__point_active"></span>
         <span class="sidenav__point"></span>
         <span class="sidenav__point"></span>
         <span class="sidenav__point"></span>
       </div>
       <ul class="sidenav__socials">
-        <li class="sidenav__social">
-          <a href="#" class="sidenav__social-link social-link_type_tg" target="_blank"></a>
+        <li class="sidenav__social">          
+          <a href="#" class="sidenav__social-link social-link_type_tg" target="_blank">
+            <img src="<%=require('../src/image/svg/icon-tg.svg')%>" alt="Telegram" class="sidenav__social-image">
+          </a>
         </li>
         <li class="sidenav__social">
-          <a href="#" class="sidenav__social-link social-link_type_gh" target="_blank"></a>
+          <a href="#" class="sidenav__social-link social-link_type_gh" target="_blank">
+            <img src="<%=require('../src/image/svg/icon-gh.svg')%>" alt="Github" class="sidenav__social-image">
+          </a>
         </li>
         <li class="sidenav__social">
-          <a href="#" class="sidenav__social-link social-link_type_in" target="_blank"></a>
+          <a href="#" class="sidenav__social-link social-link_type_in" target="_blank">
+            <img src="<%=require('../src/image/svg/icon-linkedin.svg')%>" alt="LinkedIn" class="sidenav__social-image">
+          </a>
         </li>
         <li class="sidenav__social">
-          <a href="#" class="sidenav__social-link social-link_type_inst" target="_blank"></a>
+          <a href="#" class="sidenav__social-link social-link_type_inst" target="_blank">
+            <img src="<%=require('../src/image/svg/icon-inst.svg')%>" alt="Instagram" class="sidenav__social-image">
+          </a>
         </li>
       </ul>
     </div>
@@ -168,7 +176,7 @@
       </div>
       <a href="#" class="footer__resume">Скачать резюме в PDF</a>
     </div>
-  </footer>
+  </footer>  
   <script src="../src/index.js"></script>
 </body>
 </html>

@@ -1,9 +1,13 @@
 @charset 'utf-8';
 
+html {
+  scroll-behavior: smooth
+}
+
 /*abstracts*/
 @import 'abstracts/variables';
-@import 'abstracts/placeholders';
 @import 'abstracts/mixin';
+@import 'abstracts/placeholders';
 /*abstracts*/
 
 /*vendors*/

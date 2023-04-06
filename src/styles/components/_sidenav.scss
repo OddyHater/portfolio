@@ -1,10 +1,11 @@
 .sidenav {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 285px;
+  justify-content: space-between;
   padding: 48px 0;
-  height: 100%;
+  height: 100vh;
   width: 120px;
   position: fixed;
   z-index: 3;
@@ -13,21 +14,38 @@
   background: linear-gradient(180deg, #0D2454 0%, rgba(127, 76, 239, 0) 100%);
   
   &__logo {
+    display: block;
     width: 40px;
     height: 40px;
   }
 
 
   &__points {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    min-width: 60px;
+    gap: 32px;
   }
 
   &__point {
-   
+    display: block;
+    height: 2px;
+    width: 40px;
+    background-color: #575DAB;
+
+    transition: background-color, width 0.2s ease-in-out;
+
+    &_active {
+      background-color: #fff;
+      width: 60px;
+    }
   }
 
   &__socials {
     display: flex;
     flex-direction: column;
+    gap: 20px;
   }
 
   &__social {
@@ -37,29 +55,25 @@
   }
 
   &__social-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px 20px;
+
+    border: 2px solid #fff;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) -1.46%, rgba(255, 255, 255, 0.048) 100%);
+    backdrop-filter: blur(7px);
+  }
+
+  &__social-image {
+    display: block;
   }
 }
 .social-link {
-
-  &_type_tg {
-    background-image: url("~/src/image/svg/icon-tg.svg");
-  }
-
-  &_type_gh {
-    background-image: url("~/src/image/svg/icon-gh.svg");
-  }
-
-  &_type_in {
-    background-image: url("~/src/image/svg/icon-linkedin.svg");
-  }
-
-  &_type_inst {
-    background-image: url("~/src/image/svg/icon-inst.svg");
-  }
+  
 }
