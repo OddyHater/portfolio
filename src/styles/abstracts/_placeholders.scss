@@ -2,6 +2,25 @@
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) -1.52%, rgba(255, 255, 255, 0.0192) 104.35%);
   backdrop-filter: blur(32px);
   border-radius: 2px 24px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    inset: 0;
+    z-index: 1;
+    background: radial-gradient(
+      40em circle at var(--mouseX) var(--mouseY),
+      rgba(166, 89, 211, 0.2), 
+      transparent 40%
+    );
+    opacity: 0;
+    transition: .35s;
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
 }
 
 %portfolio-button {

@@ -1,6 +1,8 @@
 .card {
   @extend %card;
   padding: 24px;
+  position: relative;
+
   // .card__title
 
   &__title {
