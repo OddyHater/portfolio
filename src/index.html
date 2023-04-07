@@ -26,10 +26,10 @@
     <div class="sidenav">
       <img src="<%=require('../src/image/svg/logo.svg')%>" alt="logo" class="sidenav__logo">
       <div class="sidenav__points">
-        <span class="sidenav__point sidenav__point_active"></span>
-        <span class="sidenav__point"></span>
-        <span class="sidenav__point"></span>
-        <span class="sidenav__point"></span>
+        <span class="sidenav__point sidenav__point_active"><a href="#hero" class="sidenav__section-link"></a></span>
+        <span class="sidenav__point"><a href="#about" class="sidenav__section-link"></a></span>
+        <span class="sidenav__point"><a href="#stack" class="sidenav__section-link"></a></span>
+        <span class="sidenav__point"><a href="#portfolio" class="sidenav__section-link"></a></span>
       </div>
       <ul class="sidenav__socials">
         <li class="sidenav__social">          
@@ -54,7 +54,7 @@
         </li>
       </ul>
     </div>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero__wrapper">
         <div class="hero__container hero__container_type_preview">
           <h1 class="hero__title title">Программирист и веб-разработчик</h1>
@@ -74,7 +74,7 @@
         </div>
       </div>
     </section>
-    <section class="about">      
+    <section class="about" id="about">      
         <img src="<%=require('../src/image/about-image.png')%>" alt="" class="about__image">
         <div class="about__text-container">
           <h2 class="about__title title">О себе</h2>
@@ -99,7 +99,7 @@
           </ul>
         </div>           
     </section>
-    <section class="stack">
+    <section class="stack" id="stack">
       <h3 class="stack__title">Stack</h3>
       <ul class="stack__list">
         <li class="stack__list-item">
@@ -124,16 +124,28 @@
         </li>
       </ul>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2 class="portfolio__title title">Портфолио</h2>
       <ul class="portfolio__cards">
         <li class="portfolio__card card">
-          <h3 class="card__title">Project Name</h3>
-          <ul class="card__stack-list">
-            <li class="card__stack-list-item">React</li>
-            <li class="card__stack-list-item">React</li>
-          </ul>
-          <img src="" alt="" class="card__image">
+          <div class="card__content">
+            <h3 class="card__title">Project Name</h3>
+            <ul class="card__stack-list">
+              <li class="card__stack-list-item">React</li>
+              <li class="card__stack-list-item">React</li>
+            </ul>
+            <img src="<%=require('../src/image/card-image-example.png')%>" alt="" class="card__image">
+          </div>
+        </li>
+        <li class="portfolio__card card">
+          <div class="card__content">
+            <h3 class="card__title">React</h3>
+            <ul class="card__stack-list">
+              <li class="card__stack-list-item">React</li>
+              <li class="card__stack-list-item">React</li>
+            </ul>
+            <img src="<%=require('../src/image/card-image-example.png')%>" alt="" class="card__image">
+          </div>
         </li>
         <li class="portfolio__card card">
           <h3 class="card__title">React</h3>
@@ -141,15 +153,7 @@
             <li class="card__stack-list-item">React</li>
             <li class="card__stack-list-item">React</li>
           </ul>
-          <img src="" alt="" class="card__image">
-        </li>
-        <li class="portfolio__card card">
-          <h3 class="card__title">React</h3>
-          <ul class="card__stack-list">
-            <li class="card__stack-list-item">React</li>
-            <li class="card__stack-list-item">React</li>
-          </ul>
-          <img src="" alt="" class="card__image">
+          <img src="<%=require('../src/image/card-image-example.png')%>" alt="" class="card__image">
         </li>
       </ul>
     </section>
