@@ -1,5 +1,5 @@
 .stack {
-  max-width: 1144px;
+  max-width: $section-width;
   margin: 0 auto;
   margin-top: 64px;
   // .stack__title
@@ -12,8 +12,15 @@
   // .stack__list
 
   &__list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 24px;
+
+    @media screen and (max-width: 1240px) {
+      grid-template-columns: repeat(3, auto);
+      align-items: center;
+      
+    }
   }
 
   // .stack__list-item

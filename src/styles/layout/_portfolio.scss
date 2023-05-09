@@ -1,5 +1,5 @@
 .portfolio {  
-  max-width: 1144px;
+  max-width: $section-width;
   margin: 0 auto;
   margin-top: 140px;
   // .portfolio__title
@@ -15,8 +15,13 @@
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 32px 24px;
+    justify-items: center;
+
+    @media screen and (max-width: 1240px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 

@@ -1,5 +1,11 @@
-.hero {
+.hero {  
+  max-width: $section-width;
+  margin: 0 auto;
   margin-top: 160px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 80px;
+  }
   // .hero__wrapper
 
   &__wrapper {
@@ -7,6 +13,13 @@
     margin: 0 auto;
     display: flex;    
     gap: 47px;
+
+    @media screen and (max-width: 1240px) { 
+      flex-direction: column;
+      align-items: center;
+
+      gap: 80px;
+    }
   }
 
   // .hero__container
@@ -17,6 +30,11 @@
 
     &_type_preview {
       padding-top: 85px;
+
+      @media screen and (max-width: 1024px) {
+        padding-top: 45px;
+        text-align: center;
+      }
     }
 
     // .hero__container_type
@@ -43,6 +61,10 @@
     display: flex;
     gap: 48px;
     align-items: center;
+
+    @media screen and (max-width: 1024px) {
+      justify-content: center;
+    }
   }
 
   &__link {
@@ -51,7 +73,7 @@
     justify-content: center;
 
     &_type_portfolio {
-      background-color: $blue;
+      background: $blue;
       padding: 18px 58px;
       @extend %active-button-border;
     }

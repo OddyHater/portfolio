@@ -1,32 +1,32 @@
 .header {    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 40px 88px 0;
+
+	&__menu {
+    
+	}
+    
+	&__menu-list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 60px;
+  }
 
-    padding: 40px 88px 0;
+  &__menu-item {
 
-		&__menu {
-        
-		}
-    
-		&__menu-list {
-      display: flex;
-      gap: 60px;
-    }
+	}
 
-		&__menu-item {
+	&__menu-link {
 
-		}
+	}
 
-		&__menu-link {
-      
-    
-		}
-
-		&__download-link {
-      display: block;
-      padding: 16px 32px;
-      border: 1px solid #fff;
-      @extend %active-button-border;
-		}
+	&__download-link {
+    display: block;
+    padding: 16px 32px;
+    border: 1px solid #fff;
+    @extend %active-button-border;
+	}
+  
 }
