@@ -2,6 +2,7 @@
   transition-property: background-color, border-color;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
+  cursor: pointer;
   
   &:hover {
     background-color: #1C9AE1;
