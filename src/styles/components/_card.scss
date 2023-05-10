@@ -3,6 +3,9 @@
   padding: 24px;
   position: relative;
 
+  box-sizing: border-box;
+  width: 100%;
+
   // .card__title
 
   &__title {
@@ -28,7 +31,7 @@
   // .card__image
 
   &__image {
-    display: block;
+    display: block;    
     @extend %portfolio-image;
   }
 }

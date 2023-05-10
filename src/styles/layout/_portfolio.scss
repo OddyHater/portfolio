@@ -2,6 +2,7 @@
   max-width: $section-width;
   margin: 0 auto;
   margin-top: 140px;
+
   // .portfolio__title
 
   &__title {
@@ -15,12 +16,19 @@
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 32px 24px;
+    grid-gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
 
-    @media screen and (max-width: 1240px) {
+    max-width: 1144px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1400px) {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
     }
   }
 }

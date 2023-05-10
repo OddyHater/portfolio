@@ -1,8 +1,15 @@
+%header-text {
+  color: #fff;
+  text-decoration: none;
+}
+
 %card {
+  display: flex;
+  flex-direction: column;
+
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.08) -1.52%, rgba(255, 255, 255, 0.0192) 104.35%);
   backdrop-filter: blur(32px);
-  border-radius: 2px 24px;
-  max-width: 365px;
+  border-radius: 2px 24px;  
 
   &::after {
     content: '';
@@ -31,6 +38,8 @@
 }
 
 %portfolio-image {
+  margin-top: auto;
+  max-width: 100%;
   border-radius: 0px 24px;
 }
 

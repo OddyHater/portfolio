@@ -1,7 +1,10 @@
-.clickable {  
-  transition: background-color 0.2s ease-in-out;
+.clickable {
+  transition-property: background-color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
   
   &:hover {
     background-color: #1C9AE1;
+    border-color: #1C9AE1;
   }
 }

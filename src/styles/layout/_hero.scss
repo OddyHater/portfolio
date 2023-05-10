@@ -6,6 +6,10 @@
   @media screen and (max-width: 1024px) {
     margin-top: 80px;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 40px;
+  }
   // .hero__wrapper
 
   &__wrapper {
@@ -32,8 +36,11 @@
       padding-top: 85px;
 
       @media screen and (max-width: 1024px) {
-        padding-top: 45px;
-        text-align: center;
+        padding-top: 45px;        
+      }
+
+      @media screen and (max-width: 768px) {
+        padding-top: 20px;
       }
     }
 
@@ -48,6 +55,10 @@
   &__title {
     margin: 0;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 16px;
+    }
   }
 
   // .hero__subtitle
@@ -55,6 +66,10 @@
   &__subtitle {
     margin: 0;
     margin-bottom: 48px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 32px;
+    }
   }
 
   &__buttons-container {
@@ -76,6 +91,10 @@
       background: $blue;
       padding: 18px 58px;
       @extend %active-button-border;
+
+      @media screen and (max-width: 768px) {
+        padding: 10px 22px;
+      }
     }
 
     &_type_about {

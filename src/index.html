@@ -10,17 +10,21 @@
     <nav class="header__menu">
       <ul class="header__menu-list">
         <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Портфолио</a>
+          <a href="#portfolio" class="header__menu-link">Портфолио</a>
         </li>
         <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Обо мне</a>
+          <a href="#about" class="header__menu-link">Обо мне</a>
         </li>
         <li class="header__menu-item">
-          <a href="#" class="header__menu-link">Контакты</a>
+          <a href="#footer" class="header__menu-link">Контакты</a>
         </li>
       </ul>
     </nav>
+    <div class="header__wrapper"></div>
     <a href="#" class="header__download-link clickable">Скачать резюме в PDF</a>
+    <div class="header__burger">
+      <span></span>
+    </div>
   </header>
   <main class="main">
     <div class="sidenav">
@@ -60,8 +64,8 @@
           <h1 class="hero__title title">Программирист и веб-разработчик</h1>
           <p class="hero__subtitle subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius dolor sed dui facilisis rhoncus.</p>
           <div class="hero__buttons-container">
-            <a href="#" class="hero__link hero__link_type_portfolio clickable">Портфолио</a>
-            <a href="#" class="hero__link hero__link_type_about">Обо мне</a>
+            <a href="#portfolio" class="hero__link hero__link_type_portfolio clickable">Портфолио</a>
+            <a href="#about" class="hero__link hero__link_type_about">Обо мне</a>
           </div>
         </div>
         <div class="hero__container hero__container_type_badge">
@@ -74,7 +78,7 @@
         </div>
       </div>
     </section>
-    <section class="about" id="about">      
+    <section class="about" id="about">
         <img src="<%=require('../src/image/about-image.png')%>" alt="" class="about__image">
         <div class="about__text-container">
           <h2 class="about__title title">О себе</h2>
@@ -127,25 +131,21 @@
     <section class="portfolio" id="portfolio">
       <h2 class="portfolio__title title">Портфолио</h2>
       <ul class="portfolio__cards">
-        <li class="portfolio__card card">
-          <div class="card__content">
-            <h3 class="card__title">Project Name</h3>
-            <ul class="card__stack-list">
-              <li class="card__stack-list-item">React</li>
-              <li class="card__stack-list-item">React</li>
-            </ul>
-            <img src="<%=require('../src/image/card-image-example.png')%>" alt="" class="card__image">
-          </div>
+        <li class="portfolio__card card">          
+          <h3 class="card__title">Project Name</h3>
+          <ul class="card__stack-list">
+            <li class="card__stack-list-item">React</li>
+            <li class="card__stack-list-item">React</li>
+          </ul>
+          <img src="<%=require('../src/image/card-image-example.png')%>" alt="" class="card__image">          
         </li>
-        <li class="portfolio__card card">
-          <div class="card__content">
-            <h3 class="card__title">React</h3>
-            <ul class="card__stack-list">
-              <li class="card__stack-list-item">React</li>
-              <li class="card__stack-list-item">React</li>
-            </ul>
-            <img src="<%=require('../src/image/card-image-example.png')%>" alt="" class="card__image">
-          </div>
+        <li class="portfolio__card card">          
+          <h3 class="card__title">React</h3>
+          <ul class="card__stack-list">
+            <li class="card__stack-list-item">React</li>
+            <li class="card__stack-list-item">React</li>
+          </ul>
+          <img src="<%=require('../src/image/card-image-example.png')%>" alt="" class="card__image">          
         </li>
         <li class="portfolio__card card">
           <h3 class="card__title">React</h3>
@@ -158,7 +158,7 @@
       </ul>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="footer__wrapper">
       <ul class="footer__socials">
         <li class="footer__social">
@@ -182,5 +182,6 @@
     </div>
   </footer>  
   <script src="../src/index.js"></script>
+  <script type="module" src="../src/script/burger.js"></script>
 </body>
 </html>
