@@ -1,4 +1,9 @@
 .content {
   background-color: $dark-blue;
   margin-left: 120px; //отступ под боковое меню
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    padding-top: 115px;
+  }
 }
