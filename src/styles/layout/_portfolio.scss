@@ -3,6 +3,10 @@
   margin: 0 auto;
   margin-top: 140px;
 
+  @media screen and (max-width: 768px) {
+    margin-top: 64px;
+  }
+
   // .portfolio__title
 
   &__title {
