@@ -49,6 +49,29 @@
 	}
 }
 
+.sidenav {
+
+  // .sidenav__menu
+
+  &__menu {
+  }
+
+  // .sidenav__menu-item
+
+  &__menu-item {
+    text-align: center;
+  }
+
+  // .sidenav__menu-link
+
+  &__menu-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: $neue-regular;
+  }
+}
+
+
 .hero {
 
 	&__link {
