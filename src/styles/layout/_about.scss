@@ -1,7 +1,7 @@
 .about {
+  @extend %section-width;
   display: flex;
   justify-content: center;
-  max-width: $section-width;
   margin: 0 auto;
   margin-top: 130px;
   gap: 86px;
@@ -15,6 +15,10 @@
 
   &__image {
     max-width: 436px;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   // .about__text-container

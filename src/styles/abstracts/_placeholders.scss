@@ -46,3 +46,11 @@
 %active-button-border {
   border-radius: 12px 0px;
 }
+
+%section-width {
+  max-width: calc(100% - 152px);
+
+  @media screen and (max-width: 768px) {
+    max-width: calc(100% - 32px);
+  }
+} 

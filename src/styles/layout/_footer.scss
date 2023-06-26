@@ -1,6 +1,6 @@
 .footer {  
+  @extend %section-width;
   padding-bottom: 140px;
-  max-width: $section-width;
   margin: 0 auto;
   margin-top: 140px;
   // .footer__wrapper
