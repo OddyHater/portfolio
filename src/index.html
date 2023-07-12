@@ -89,13 +89,13 @@
           <div class="hero__badge-info-container">
             <p class="hero__badge hero__badge_type_name">Роман Гришин</p>
             <p class="hero__badge hero__badge_type_proff">Frontend developer</p>
-            <p class="hero__badge hero__badge_type_experience">Дофига опыта работы</p>
+            <!-- <p class="hero__badge hero__badge_type_experience">Дофига опыта работы</p> -->
           </div>
         </div>
       </div>
     </section>
     <section class="about" id="about">
-        <img src="<%=require('../src/image/about-image.png')%>" alt="" class="about__image">
+        <!-- <img src="<%=require('../src/image/about-image.png')%>" alt="" class="about__image"> -->
         <div class="about__text-container">
           <h2 class="about__title title">О себе</h2>
           <p class="about__subtitle subtitle">В вебе мне нравится видеть результат своей работы. Хороший результат для меня - оптимизированный качественный интерфейс и приятное взаимодействие с ним. Я увлечен новыми технологиями и постоянно изучаю что-то новое. Если вы ищете профессионала, который поможет вам создать веб-сайт и заставит вашу аудиторию влюбиться в ваш бренд, то я готов к сотрудничеству!</p>
@@ -126,21 +126,56 @@
         </li>
         <li class="stack__list-item">
           <img src="" alt="" class="stack__icon">
+          <p class="stack__text">Redux Toolkit</p>
+        </li>
+        <li class="stack__list-item">
+          <img src="" alt="" class="stack__icon">
           <p class="stack__text">Parcel</p>
         </li>
         <li class="stack__list-item">
           <img src="" alt="" class="stack__icon">
           <p class="stack__text">Webpack</p>
         </li>
-        <li class="stack__list-item">
-          <img src="" alt="" class="stack__icon">
-          <p class="stack__text">Redux Toolkit</p>
-        </li>
       </ul>      
     </section>
     <section class="portfolio" id="portfolio">
       <h2 class="portfolio__title title">Портфолио</h2>
       <ul class="portfolio__cards">
+        <li class="portfolio__card card">          
+          <h3 class="card__title">Bang & olufsen</h3>
+          <ul class="card__stack-list">
+            <li class="card__stack-list-item">React</li>
+            <li class="card__stack-list-item">Redux Toolkit</li>
+          </ul>
+          <img src="<%=require('../src/image/bang.jpg')%>" alt="Брендзона B&O" class="card__image">
+          <div class="card__resourses">
+            <a href="https://www.technodom.kz/cms/bang-and-olufsen-test" class="card__resourse clickable">Посмотреть</a>
+          </div>
+        </li>
+        <li class="portfolio__card card">          
+          <h3 class="card__title">Britlex</h3>
+          <ul class="card__stack-list">
+            <li class="card__stack-list-item">Sass</li>
+            <li class="card__stack-list-item">Parcel</li>
+          </ul>
+          <img src="<%=require('../src/image/britlex.png')%>" alt="Языковая школа Britlex" class="card__image">
+          <div class="card__resourses">
+            <a href="https://oddyhater.github.io/Britlex/" class="card__resourse clickable">Посмотреть</a>
+            <a href="https://github.com/OddyHater/Britlex" class="card__resourse clickable">GitHub</a>
+          </div>
+        </li>
+        <li class="portfolio__card card">
+          <h3 class="card__title">Розыгрыш Samsung</h3>
+          <ul class="card__stack-list">
+            <li class="card__stack-list-item">Sass</li>
+            <li class="card__stack-list-item">Js</li>
+            <li class="card__stack-list-item">Webpack</li>
+          </ul>
+          <img src="<%=require('../src/image/samsung.png')%>" alt="" class="card__image">
+          <div class="card__resourses">
+            <a href="https://www.technodom.kz/cms/samsung-windfree-raffle" class="card__resourse clickable">Посмотреть</a>            
+          </div>
+        </li>
         <li class="portfolio__card card">          
           <h3 class="card__title">Интеграция с Airba Fresh</h3>
           <ul class="card__stack-list">
@@ -161,7 +196,7 @@
           </ul>
           <img src="<%=require('../src/image/mesto.png')%>" alt="" class="card__image">
           <div class="card__resourses">
-            <a href="https://github.com/OddyHater/mesto-react" class="card__resourse clickable">GitHub</a>            
+            <a href="https://github.com/OddyHater/react-mesto-auth" class="card__resourse clickable">GitHub</a>            
           </div>
         </li>
         <li class="portfolio__card card">
@@ -176,30 +211,6 @@
             <a href="https://www.technodom.kz/cms/b/asus" class="card__resourse clickable">Посмотреть</a>            
           </div>
         </li>
-        <li class="portfolio__card card">
-          <h3 class="card__title">Розыгрыш Samsung</h3>
-          <ul class="card__stack-list">
-            <li class="card__stack-list-item">Sass</li>
-            <li class="card__stack-list-item">Js</li>
-            <li class="card__stack-list-item">Webpack</li>
-          </ul>
-          <img src="<%=require('../src/image/samsung.png')%>" alt="" class="card__image">
-          <div class="card__resourses">
-            <a href="https://www.technodom.kz/cms/samsung-windfree-raffle" class="card__resourse clickable">Посмотреть</a>            
-          </div>
-        </li>
-        <li class="portfolio__card card">          
-          <h3 class="card__title">Britlex</h3>
-          <ul class="card__stack-list">
-            <li class="card__stack-list-item">Sass</li>
-            <li class="card__stack-list-item">Parcel</li>
-          </ul>
-          <img src="<%=require('../src/image/britlex.png')%>" alt="Языковая школа Britlex" class="card__image">
-          <div class="card__resourses">
-            <a href="https://oddyhater.github.io/Britlex/" class="card__resourse clickable">Посмотреть</a>
-            <a href="https://github.com/OddyHater/Britlex" class="card__resourse clickable">GitHub</a>
-          </div>
-        </li>
         <li class="portfolio__card card">          
           <h3 class="card__title">Страница Redmi</h3>
           <ul class="card__stack-list">
@@ -207,10 +218,21 @@
             <li class="card__stack-list-item">Sass</li>
             <li class="card__stack-list-item">Webpack</li>
           </ul>
-          <img src="<%=require('../src/image/redmi.png')%>" alt="Языковая школа Britlex" class="card__image">
+          <img src="<%=require('../src/image/redmi.png')%>" alt=" Redmi" class="card__image">
           <div class="card__resourses">
             <a href="https://www.technodom.kz/cms/redmi-note-12" class="card__resourse clickable">Посмотреть</a>
-            <a href="https://github.com/OddyHater/Britlex" class="card__resourse clickable">GitHub</a>
+          </div>
+        </li>
+        <li class="portfolio__card card">          
+          <h3 class="card__title">SmartThings</h3>
+          <ul class="card__stack-list">
+            <li class="card__stack-list-item">Js</li>
+            <li class="card__stack-list-item">Sass</li>
+            <li class="card__stack-list-item">Parcel</li>
+          </ul>
+          <img src="<%=require('../src/image/smart-thing.jpg')%>" alt="Страница Samsung SmartThings" class="card__image">
+          <div class="card__resourses">
+            <a href="https://www.technodom.kz/cms/promo/samsung-smart-things" class="card__resourse clickable">Посмотреть</a>
           </div>
         </li>
       </ul>

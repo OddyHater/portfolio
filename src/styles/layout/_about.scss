@@ -30,11 +30,13 @@
   // .about__text-container
 
   &__text-container {
-    max-width: 50%;
+    
 
-    @media screen and (max-width: 1240px) {
-      max-width: 100%;
-    }
+    //max-width: 50%;
+
+    // @media screen and (max-width: 1240px) {
+    //   max-width: 100%;
+    // } //при наличии фотки
   }
 
   // .about__title
